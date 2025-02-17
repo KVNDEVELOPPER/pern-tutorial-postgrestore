@@ -1,4 +1,4 @@
-# PERN PROJECT PERN
+# PERN TUTORIAL PROJECT
 
 This project teaches RAW SQL with a PERN project.
 
