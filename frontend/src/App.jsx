@@ -1,9 +1,19 @@
 import { useState } from "react";
+import Navbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
+import { Routes, Route, BrowserRouter } from "react-router-dom";
+import ProductPage from "./pages/ProductPage";
 
 function App() {
   return (
     <>
-      <h1 className="text-3xl font-bold underline bg-red-500">Hello World</h1>
+      <div className="min-h-screen bg-base-200 transition-colors duration-300">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/product/:id" element={<ProductPage />} />
+        </Routes>
+      </div>
     </>
   );
 }
