@@ -11,8 +11,6 @@ const HomePage = () => {
     fetchProducts();
   }, [fetchProducts]);
 
-  console.log("products", products);
-
   return (
     <main className="container mx-auto px-4 py-8 max-w-6xl">
       <div className="flex justify-between items-center mb-8">

@@ -13,11 +13,9 @@ const AddProductModal = () => {
     <dialog id="add_product_modal" className="modal">
       <div className="modal-box">
         {/* CLOSE BUTTON */}
-        <form method="dialog">
-          <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
-            X
-          </button>
-        </form>
+        <button className="btn btn-sm btn-circle btn-ghost absolute right-2 top-2">
+          X
+        </button>
         {/* MODAL HEADER */}
         <h3 className="font-bold text-xl mb-8">Add New Product</h3>
         {/* FORM */}
@@ -90,9 +88,7 @@ const AddProductModal = () => {
           </div>
           {/* SUBMIT BUTTON */}
           <div className="modal-action">
-            <form method="dialog">
-              <button className="btn btn-ghost">Cancel</button>
-            </form>
+            <button className="btn btn-ghost">Cancel</button>
             <button
               type="submit"
               className="btn btn-primary min-w-[120px]"
